@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Questionnaire = ({ exam, date }) => {
-  const [item, setItem] = useState(0);
+const Questionnaire = ({ exam, date, currentItem, changeItemCallback }) => {
   const [answerColor, setAnswerColor] = useState('');
-  const { answer } = exam[item];
+  const { answer } = exam[currentItem];
   const color = '#1b6100';
-
-  // must start with item #1 every time user switches exam year
-  useEffect(() => {
-    setItem(0);
-  }, [exam]);
 
   const onClickAns = () => {
     if (answerColor) {
@@ -21,19 +15,19 @@ const Questionnaire = ({ exam, date }) => {
   };
 
   const onClickPrev = () => {
-    if (item === 0) {
-      setItem(exam.length - 1);
+    if (currentItem === 0) {
+      changeItemCallback(exam.length - 1);
       return;
     }
-    setItem(item - 1);
+    changeItemCallback(currentItem - 1);
   };
 
   const onClickNext = () => {
-    if (item === exam.length - 1) {
-      setItem(0);
+    if (currentItem === exam.length - 1) {
+      changeItemCallback(0);
       return;
     }
-    setItem(item + 1);
+    changeItemCallback(currentItem + 1);
   };
 
   // returns list element(choices) that has inline style of bgColor on the correct answer
@@ -41,11 +35,11 @@ const Questionnaire = ({ exam, date }) => {
     if (answer === optionX) {
       return (
         <li className='choices' style={{ backgroundColor: answerColor }}>
-          {exam[item][optionX]}
+          {exam[currentItem][optionX]}
         </li>
       );
     }
-    return <li className='choices'>{exam[item][optionX]}</li>;
+    return <li className='choices'>{exam[currentItem][optionX]}</li>;
   };
 
   return (
@@ -75,12 +69,12 @@ const Questionnaire = ({ exam, date }) => {
       </nav>
       <main className='app__main__items'>
         <p className='app__main__items__subHeading'>
-          {`${item + 1} / ${exam.length}`}
+          {`${currentItem + 1} / ${exam.length}`}
           &nbsp; &nbsp;
           {date}
         </p>
         <div className='app__main__items__questionnaire'>
-          <p className='app__main__items__questionnaire__question'>{`${exam[item].questionnaire}`}</p>
+          <p className='app__main__items__questionnaire__question'>{`${exam[currentItem].questionnaire}`}</p>
           <ol className='app__main__items__questionnaire__choices'>
             {inspectedListElement('optionA')}
             {inspectedListElement('optionB')}
@@ -96,6 +90,8 @@ const Questionnaire = ({ exam, date }) => {
 Questionnaire.propTypes = {
   exam: PropTypes.arrayOf.isRequired,
   date: PropTypes.string.isRequired,
+  currentItem: PropTypes.number.isRequired,
+  changeItemCallback: PropTypes.func.isRequired,
 };
 
 export default Questionnaire;

@@ -6,10 +6,16 @@ import esas2019a from '../questionnaires/esas_2019_mar.json';
 const Year = () => {
   const [examJSON, setExamJSON] = useState(esas2020);
   const [examDate, setExamDate] = useState('Feb 2020');
+  const [currentItem, setCurrentItem] = useState(0);
 
   const onClick = (yearJSON, date) => {
+    setCurrentItem(0); // start at item 0 when changing year
     setExamDate(date);
     setExamJSON(yearJSON);
+  };
+
+  const changeItemCallback = (item) => {
+    setCurrentItem(item);
   };
 
   return (
@@ -31,7 +37,12 @@ const Year = () => {
         </button>
       </nav>
 
-      <Questionnaire exam={examJSON} date={examDate} />
+      <Questionnaire
+        exam={examJSON}
+        date={examDate}
+        currentItem={currentItem}
+        changeItemCallback={changeItemCallback}
+      />
     </section>
   );
 };
