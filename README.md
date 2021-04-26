@@ -6,4 +6,4 @@ A react app that helps students of electrical eng'r on objective-type questions.
 
 <br />
 
-[Click Here to view live preview](https://jove0610.github.io/ree_reviwer/)
+[Click Here to view live preview](https://jove0610.github.io/ree_reviewer/)
