@@ -9,6 +9,8 @@ const Year = () => {
   const [currentItem, setCurrentItem] = useState(0);
 
   const onClick = (yearJSON, date) => {
+    if (examJSON === yearJSON) return;
+
     setCurrentItem(0); // start at item 0 when changing year
     setExamDate(date);
     setExamJSON(yearJSON);

@@ -1,3 +1,7 @@
 April 25, 2021_____10:25 PM
 ---Fixed a bug where if user at item 32-34 at year 2019 changes to year 2020 (who has max 31 items), the app will disappear.
 ---This is because the year 2020 has no items 32-34, thus it will say undefined.
+
+
+April 26, 2021_____2:11 PM
+---Fixed a bug where if the user clicked on a year and is currently viewing the same year, then the item will reset to 1.
