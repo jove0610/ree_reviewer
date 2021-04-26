@@ -181,7 +181,7 @@
     },
     {
         "id": 21,
-        "questionnaire": "What is a protective device designed to protect an individual against electrick shock?",
+        "questionnaire": "What is a protective device designed to protect an individual against electric shock?",
         "optionA": "Circuit Breaker",
         "optionB": "AFCI",
         "optionC": "Differential Relay",
