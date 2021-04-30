@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Questionnaire = ({ exam, date, currentItem, changeItemCallback }) => {
+const Questionnaire = ({ examSet, currentItem, changeItemCallback }) => {
+  if (Object.keys(examSet).length === 0) {
+    return null;
+  }
   const [answerColor, setAnswerColor] = useState('');
-  const { answer } = exam[currentItem];
+  const examJSON = examSet.json;
+  const { answer } = examJSON[currentItem];
   const color = '#1b6100';
 
   const onClickAns = () => {
@@ -16,14 +20,14 @@ const Questionnaire = ({ exam, date, currentItem, changeItemCallback }) => {
 
   const onClickPrev = () => {
     if (currentItem === 0) {
-      changeItemCallback(exam.length - 1);
+      changeItemCallback(examJSON.length - 1);
       return;
     }
     changeItemCallback(currentItem - 1);
   };
 
   const onClickNext = () => {
-    if (currentItem === exam.length - 1) {
+    if (currentItem === examJSON.length - 1) {
       changeItemCallback(0);
       return;
     }
@@ -35,15 +39,15 @@ const Questionnaire = ({ exam, date, currentItem, changeItemCallback }) => {
     if (answer === optionX) {
       return (
         <li className='choices' style={{ backgroundColor: answerColor }}>
-          {exam[currentItem][optionX]}
+          {examJSON[currentItem][optionX]}
         </li>
       );
     }
-    return <li className='choices'>{exam[currentItem][optionX]}</li>;
+    return <li className='choices'>{examJSON[currentItem][optionX]}</li>;
   };
 
   return (
-    <section>
+    <section className='app__main'>
       <nav className='app__main__navItems'>
         <button
           className='app__main__navItems__btn'
@@ -69,12 +73,12 @@ const Questionnaire = ({ exam, date, currentItem, changeItemCallback }) => {
       </nav>
       <main className='app__main__items'>
         <p className='app__main__items__subHeading'>
-          {`${currentItem + 1} / ${exam.length}`}
+          {`${currentItem + 1} / ${examJSON.length}`}
           &nbsp; &nbsp;
-          {date}
+          {examSet.textLabel}
         </p>
         <div className='app__main__items__questionnaire'>
-          <p className='app__main__items__questionnaire__question'>{`${exam[currentItem].questionnaire}`}</p>
+          <p className='app__main__items__questionnaire__question'>{`${examJSON[currentItem].questionnaire}`}</p>
           <ol className='app__main__items__questionnaire__choices'>
             {inspectedListElement('optionA')}
             {inspectedListElement('optionB')}
@@ -88,8 +92,7 @@ const Questionnaire = ({ exam, date, currentItem, changeItemCallback }) => {
 };
 
 Questionnaire.propTypes = {
-  exam: PropTypes.arrayOf.isRequired,
-  date: PropTypes.string.isRequired,
+  examSet: PropTypes.objectOf(PropTypes.any).isRequired,
   currentItem: PropTypes.number.isRequired,
   changeItemCallback: PropTypes.func.isRequired,
 };
