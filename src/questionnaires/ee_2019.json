@@ -144,7 +144,7 @@
       "answer":"optionB"
    },
    {
-      "id":19,
+      "id":17,
       "questionnaire":"The product of rms values of current and voltage is called",
       "optionA":"real power",
       "optionB":"apparent power",
@@ -153,7 +153,7 @@
       "answer":"optionB"
    },
    {
-      "id":20,
+      "id":18,
       "questionnaire":"An electric current can neither be _______ nor ________.",
       "optionA":"felt, seen",
       "optionB":"seen, touched",
@@ -162,7 +162,7 @@
       "answer":"optionB"
    },
    {
-      "id":21,
+      "id":19,
       "questionnaire":"Ohm's law is not applicable to",
       "optionA":"vacuum tubes",
       "optionB":"carbon resistors",
@@ -171,7 +171,7 @@
       "answer":"optionA"
    },
    {
-      "id":22,
+      "id":20,
       "questionnaire":"Which medium has the highest value of dielectric strength?",
       "optionA":"glass",
       "optionB":"porcelain",
@@ -180,7 +180,7 @@
       "answer":"optionC"
    },
    {
-      "id":23,
+      "id":21,
       "questionnaire":"Which of the following buses constitute the maximum number in a power system?",
       "optionA":"Slack bus",
       "optionB":"P Q bus",
@@ -189,7 +189,7 @@
       "answer":"optionB"
    },
    {
-      "id":24,
+      "id":22,
       "questionnaire":"In order to transfer the load from one alternator to another alternator, when they are operating in parallel",
       "optionA":"field current is increased",
       "optionB":"field current is decreased",
@@ -198,7 +198,7 @@
       "answer":"optionD"
    },
    {
-      "id":25,
+      "id":23,
       "questionnaire":"KCL works on the principle of which of the following",
       "optionA":"law of conservation of charge",
       "optionB":"law of conservation of energy",
@@ -207,8 +207,8 @@
       "answer":"optionA"
    },
    {
-      "id":26,
-      "questionnaire":"The law that induces emf and current always opposite the cause producing them was discovered by",
+      "id":24,
+      "questionnaire":"The law that induces emf and current always opposes the cause producing them was discovered by",
       "optionA":"Faraday",
       "optionB":"Maxwell",
       "optionC":"Lenz",
@@ -216,7 +216,7 @@
       "answer":"optionC"
    },
    {
-      "id":27,
+      "id":25,
       "questionnaire":"Series capacitors are used to",
       "optionA":"improve the line voltage",
       "optionB":"compensate for line inductive reactance",
@@ -225,7 +225,7 @@
       "answer":"optionB"
    },
    {
-      "id":28,
+      "id":26,
       "questionnaire":"Which of the following distribution systems gives the greater reliability?",
       "optionA":"radial system",
       "optionB":"ring system",
@@ -234,7 +234,7 @@
       "answer":"optionB"
    },
    {
-      "id":29,
+      "id":27,
       "questionnaire":"The transformer oil used in transformers provide",
       "optionA":"cooling and lubrication",
       "optionB":"insulation and lubrication",
@@ -243,7 +243,7 @@
       "answer":"optionC"
    },
    {
-      "id":30,
+      "id":28,
       "questionnaire":"To protect the Δ-Δ power transformer against fault, the CT will have",
       "optionA":"Δ-Δ connection",
       "optionB":"Δ-Y connection",
@@ -252,7 +252,7 @@
       "answer":"optionD"
    },
    {
-      "id":31,
+      "id":29,
       "questionnaire":"For a detection of the occurrence of the severe synchronizing power surges",
       "optionA":"impedance relays are best suited",
       "optionB":"reactance relays are best suited",
@@ -261,7 +261,7 @@
       "answer":"optionC"
    },
    {
-      "id":32,
+      "id":30,
       "questionnaire":"If the capacitance of the transmission line is increased, the transmitted power will",
       "optionA":"remain same",
       "optionB":"increase",
@@ -270,7 +270,7 @@
       "answer":"optionB"
    },
    {
-      "id":33,
+      "id":31,
       "questionnaire":"Which of the following tests are conducted for transformer oil? >>>I. dielectric >>>II interfacial tension >>>III. color of oil >>>IV. neutralization number >>>V. power factor >>>VI. specific gravity",
       "optionA":"I, II, III and IV",
       "optionB":"I, II, III and V",
@@ -279,7 +279,7 @@
       "answer":"optionC"
    },
    {
-      "id":34,
+      "id":32,
       "questionnaire":"Peak load plants are designed to supply power at",
       "optionA":"low capital cost and low operating cost",
       "optionB":"high capital cost and low operating cost",
@@ -288,7 +288,7 @@
       "answer":"optionC"
    },
    {
-      "id":35,
+      "id":33,
       "questionnaire":"Which is not a standard distribution voltage in the Philippines?",
       "optionA":"13.2 kV",
       "optionB":"13.8 kV",
@@ -297,7 +297,7 @@
       "answer":"optionA"
    },
    {
-      "id":36,
+      "id":34,
       "questionnaire":"What is the maximum number of conductors in a raceway that does not need to be derated?",
       "optionA":"2",
       "optionB":"3",
@@ -306,7 +306,7 @@
       "answer":"optionB"
    },
    {
-      "id":37,
+      "id":35,
       "questionnaire":"When peace and order problem exist, National Grid Corporation of the Philippines (NGCP) issues",
       "optionA":"security alert",
       "optionB":"imminent danger alert",
@@ -315,7 +315,7 @@
       "answer":"optionA"
    },
    {
-      "id":38,
+      "id":36,
       "questionnaire":"Which increases the resistance of a conductor?",
       "optionA":"increase in size",
       "optionB":"increase in length",
@@ -324,7 +324,7 @@
       "answer":"optionB"
    },
    {
-      "id":39,
+      "id":37,
       "questionnaire":"A type of electronics communication in which only one party transmits at a time.",
       "optionA":"Full duplex",
       "optionB":"Half duplex",
@@ -333,7 +333,7 @@
       "answer":"optionB"
    },
    {
-      "id":40,
+      "id":38,
       "questionnaire":"21 is the device function number for this relay.",
       "optionA":"Undervoltage relay",
       "optionB":"Overvoltage relay",
@@ -342,7 +342,7 @@
       "answer":"optionC"
    },
    {
-      "id":41,
+      "id":39,
       "questionnaire":"AC system has the following disadvantages over DC system.",
       "optionA":"skin effect exist",
       "optionB":"line regulation is more",
@@ -351,7 +351,7 @@
       "answer":"optionC"
    },
    {
-      "id":42,
+      "id":40,
       "questionnaire":"RA 7832 concerns on _______",
       "optionA":"pilferage of electricity, theft of transmission materials and capping of system loss",
       "optionB":"pilferage of electricity, theft of transmission materials and rationalizing of system loss",
@@ -360,7 +360,7 @@
       "answer":"optionB"
    },
    {
-      "id":43,
+      "id":41,
       "questionnaire":"Open circuit test on transformers is conducted to determine",
       "optionA":"hysteresis loss",
       "optionB":"copper loss",
@@ -369,7 +369,7 @@
       "answer":"optionC"
    },
    {
-      "id":44,
+      "id":42,
       "questionnaire":"PDC in EPIRA means",
       "optionA":"Philippine Distribution Company",
       "optionB":"Philippine Distribution Corporation",
@@ -378,7 +378,7 @@
       "answer":"optionD"
    },
    {
-      "id":45,
+      "id":43,
       "questionnaire":"What device is used to measure the temperature of a motor winding while the motor is in operation?",
       "optionA":"Seismic probe",
       "optionB":"Resistance temperature detector",
@@ -387,7 +387,7 @@
       "answer":"optionB"
    },
    {
-      "id":46,
+      "id":44,
       "questionnaire":"Which of the following type of fault used only the equivalent positive sequence impedance of the circuit in the short-circuit calculation?",
       "optionA":"Line to line",
       "optionB":"Line to ground",
@@ -396,7 +396,7 @@
       "answer":"optionD"
    },
    {
-      "id":47,
+      "id":45,
       "questionnaire":"The amount of frequency deviation from the carrier center of frequency in an FM transmitter is proportional to the __________",
       "optionA":"shape",
       "optionB":"amplitude",
@@ -405,7 +405,7 @@
       "answer":"optionB"
    },
    {
-      "id":48,
+      "id":46,
       "questionnaire":"If the resistance in a series RC circuit is increased, the magnitude of the phase angle",
       "optionA":"increases",
       "optionB":"remains the same",
@@ -414,7 +414,7 @@
       "answer":"optionC"
    },
    {
-      "id":49,
+      "id":47,
       "questionnaire":"Nuclear reactors generally employ",
       "optionA":"fusion",
       "optionB":"fission",
@@ -423,7 +423,7 @@
       "answer":"optionB"
    },
    {
-      "id":50,
+      "id":48,
       "questionnaire":"Which of the following is not a factor in calculating the feeder conductor size?",
       "optionA":"ambient temperature",
       "optionB":"branch-circuit protection",

@@ -37,7 +37,7 @@
    },
    {
       "id":5,
-      "questionnaire":"What is the maximum number of bands permitted in rigid conduits between outlets?",
+      "questionnaire":"What is the maximum number of bends permitted in rigid conduits between outlets?",
       "optionA":"4 quarter bends",
       "optionB":"6 quarter bends",
       "optionC":"2 quarter bends",
@@ -73,7 +73,7 @@
    },
    {
       "id":9,
-      "questionnaire":"Which of the following shall be included in the calculation of the reliability standard indices of the distributor asset by the Philippine Distributor Code?",
+      "questionnaire":"Which of the following shall be included in the calculation of the reliability standard indices of the distributor asset by the Philippine Distribution Code?",
       "optionA":"Outages that occur on the secondary lines of the distribution system",
       "optionB":"Planned outages where the customers have been notified at least three(3) days prior to the loss of power",
       "optionC":"Outages that occur on the primary lines of the distribution system",
@@ -175,13 +175,13 @@
       "questionnaire":"What does PEMC in EPIRA stands for",
       "optionA":"Philippine Energy Market Corporation",
       "optionB":"Private Energy Marketing Company",
-      "optionC":"Philippine Energy Market Corporation",
+      "optionC":"Philippine Electricity Market Corporation",
       "optionD":"Philippine Electrical Marketing Corporation",
       "answer":"optionC"
    },
    {
       "id":21,
-      "questionnaire":"For two alternators operating in parallel, if the load shared by one of the, to be increased, as field excitation is",
+      "questionnaire":"For two alternators operating in parallel, if the load shared by one of them is to be increased, as field excitation is",
       "optionA":"to be strengthened keeping input torque the same",
       "optionB":"to be weakened keeping input torque the same",
       "optionC":"to be kept constant but input torque should be increased",
@@ -309,7 +309,7 @@
       "id":35,
       "questionnaire":"For constant transmission efficiency, voltage is increased n times, the size of the conductor would be _____",
       "optionA":"reduced to (1/n) times of the original",
-      "optionB":"reduced to (1/n²)",
+      "optionB":"reduced to (1/n²) times of the original",
       "optionC":"increased to n² times of the original",
       "optionD":"increased to n times of the original",
       "answer":"optionB"

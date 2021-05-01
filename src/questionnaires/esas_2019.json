@@ -82,7 +82,7 @@
    },
    {
       "id":10,
-      "questionnaire":"Which of the following metal has the highest specific heat capacity at 100 deg C?",
+      "questionnaire":"Which of the following metals has the highest specific heat capacity at 100 deg C?",
       "optionA":"aluminum",
       "optionB":"silver",
       "optionC":"copper",
