@@ -46,7 +46,7 @@
    },
    {
       "id":6,
-      "questionnaire":"What is/are the main reason/s for using high voltage in the transmission of power in the grid system? >>>I. to transmit bulk power with minimum line losses >>>II. Increase system reliability",
+      "questionnaire":"What is/are the main reason/s for using high voltage in the transmission of power in the grid system? <br /><br />I. to transmit bulk power with minimum line losses <br />II. Increase system reliability",
       "optionA":"II only",
       "optionB":"both I and II",
       "optionC":"either I or II",
@@ -271,7 +271,7 @@
    },
    {
       "id":31,
-      "questionnaire":"Which of the following tests are conducted for transformer oil? >>>I. dielectric >>>II interfacial tension >>>III. color of oil >>>IV. neutralization number >>>V. power factor >>>VI. specific gravity",
+      "questionnaire":"Which of the following tests are conducted for transformer oil? <br /><br />I. dielectric <br />II interfacial tension <br />III. color of oil <br />IV. neutralization number <br />V. power factor <br />VI. specific gravity",
       "optionA":"I, II, III and IV",
       "optionB":"I, II, III and V",
       "optionC":"II, III, IV and V",

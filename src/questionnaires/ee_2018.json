@@ -397,7 +397,7 @@
    },
    {
       "id":45,
-      "questionnaire":"When the voltage remains the same, the current will ______ as the impedance decreases. >>>I. decrease >>>II. increase",
+      "questionnaire":"When the voltage remains the same, the current will ______ as the impedance decreases. <br /><br />I. decrease <br />II. increase",
       "optionA":"I only",
       "optionB":"Both",
       "optionC":"Either I or II",

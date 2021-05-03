@@ -5,9 +5,11 @@ const Questionnaire = ({ examSet, currentItem, changeItemCallback }) => {
   if (Object.keys(examSet).length === 0) {
     return null;
   }
+  // answerColor is assigned as the value of backgroundColor on inline style of the correct li element
   const [answerColor, setAnswerColor] = useState('');
   const examJSON = examSet.json;
   const { answer } = examJSON[currentItem];
+  // color used for highlighting answer
   const color = '#1b6100';
 
   const onClickAns = () => {
@@ -78,7 +80,13 @@ const Questionnaire = ({ examSet, currentItem, changeItemCallback }) => {
           {examSet.textLabel}
         </p>
         <div className='app__main__items__questionnaire'>
-          <p className='app__main__items__questionnaire__question'>{`${examJSON[currentItem].questionnaire}`}</p>
+          <p
+            className='app__main__items__questionnaire__question'
+            dangerouslySetInnerHTML={{
+              __html: examJSON[currentItem].questionnaire,
+            }}
+          />
+
           <ol className='app__main__items__questionnaire__choices'>
             {inspectedListElement('optionA')}
             {inspectedListElement('optionB')}

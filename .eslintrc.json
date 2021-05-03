@@ -20,6 +20,7 @@
     ],
     "parser": "babel-eslint",
     "rules": {
-        "react/jsx-filename-extension": 0
+        "react/jsx-filename-extension": 0,
+        "react/no-danger": 0
     }
 }
