@@ -19,7 +19,7 @@
    },
    {
       "id":3,
-      "questionnaire":"Sec. 23 of Art III of RA 7920 Issuance of Certificate of Registration. The professional is required to renew license every _____ years upon payment of registration fees.",
+      "questionnaire":"Sec. 23 of Art III of RA 7920: Issuance of Certificate of Registration. The professional is required to renew license every _____ years upon payment of registration fees.",
       "optionA":"1",
       "optionB":"2",
       "optionC":"3",
@@ -60,7 +60,7 @@
       "optionB":"Basic Input Output System",
       "optionC":"Base Input Output Society",
       "optionD":"Base Input Output System",
-      "answer":"optionD"
+      "answer":"optionB"
    },
    {
       "id":8,
@@ -68,8 +68,8 @@
       "optionA":"Barometer",
       "optionB":"Hydrometer",
       "optionC":"Pilot tube",
-      "optionD":"Pilot tube",
-      "answer":"optionB"
+      "optionD":"Pitot tube",
+      "answer":"optionD"
    },
    {
       "id":9,
@@ -78,7 +78,7 @@
       "optionB":"conversation of energy",
       "optionC":"conservation of momentum",
       "optionD":"conservation of mass and energy",
-      "answer":"optionA"
+      "answer":"optionB"
    },
    {
       "id":10,
@@ -96,7 +96,7 @@
       "optionB":"Dry location",
       "optionC":"Damp location",
       "optionD":"Moist location",
-      "answer":"optionA"
+      "answer":"optionC"
    },
    {
       "id":12,
@@ -112,9 +112,9 @@
       "questionnaire":"When an object exerts a force on another object, the second object exerts on the first a force of the same magnitude but in the opposite direction. This law is known as:",
       "optionA":"Newton’s First law of Motion",
       "optionB":"Newton’s Second law of Motion",
-      "optionC":"Equipment Grounding Conductor",
-      "optionD":"Grounding Electrode Conductor",
-      "answer":"optionB"
+      "optionC":"Newton's Third law of Motion",
+      "optionD":"None of these",
+      "answer":"optionC"
    },
    {
       "id":14,
@@ -123,7 +123,7 @@
       "optionB":"Grounding Conductor",
       "optionC":"Equipment Grounding Conductor",
       "optionD":"Grounding Electrode Conductor",
-      "answer":""
+      "answer":"optionA"
    },
    {
       "id":15,
@@ -132,7 +132,7 @@
       "optionB":"Dial-up",
       "optionC":"FTTH",
       "optionD":"Broadband wireless",
-      "answer":"optionA"
+      "answer":"optionC"
    },
    {
       "id":16,
@@ -150,7 +150,7 @@
       "optionB":"lie on the same line",
       "optionC":"meet on the same plane",
       "optionD":"none of these",
-      "answer":"optionB"
+      "answer":"optionA"
    },
    {
       "id":18,
@@ -199,7 +199,7 @@
    },
    {
       "id":23,
-      "questionnaire":"A diagram which show the variations of the axial for all sections of the span of a beam, is called",
+      "questionnaire":"A diagram which show the variations of the axial load for all sections of the span of a beam, is called",
       "optionA":"Bending moment diagram",
       "optionB":"Shear force diagram",
       "optionC":"Thrust diagram",
@@ -226,7 +226,7 @@
    },
    {
       "id":26,
-      "questionnaire":"The differential of the shear stress equation is which ones of the following",
+      "questionnaire":"The differential of the shear equation is which ones of the following",
       "optionA":"load on the beam",
       "optionB":"tensile strength of the beam",
       "optionC":"bending moment of the beam",
@@ -235,7 +235,7 @@
    },
    {
       "id":27,
-      "questionnaire":"The conductor used to connect the grounding electrode to the equipment grounding conductor, to grounded conductor, or to both, of the circuit at the equipment or at the source of a separated derived system.",
+      "questionnaire":"The conductor used to connect the grounding electrode to the equipment grounding conductor, to the grounded conductor, or to both, of the circuit at the service equipment or at the source of a separated derived system.",
       "optionA":"Grounded Conductor",
       "optionB":"Grounding Conductor",
       "optionC":"Equipment Grounding Conductor",
@@ -257,7 +257,7 @@
       "optionA":"Take 1-year electrician’s course and 3-years apprenticeship",
       "optionB":"Take 2-year electrician’s course and 2-years apprenticeship",
       "optionC":"Take 3-years of BSEE with apprenticeship",
-      "optionD":"Graduate BSEE",
+      "optionD":"Graduate of BSEE",
       "answer":"optionD"
    },
    {
@@ -297,8 +297,8 @@
       "answer":"optionB"
    },
    {
-      "id":36,
-      "questionnaire":"You are standing on a bathroom scale in an elevator. In which of these situations must then be the same as when the elevator is at rest?",
+      "id":34,
+      "questionnaire":"You are standing on a bathroom scale in an elevator. In which of these situations must the scale read the same as when the elevator is at rest?",
       "optionA":"Moving up at constant speed",
       "optionB":"Moving up with increasing speed",
       "optionC":"Moving down with increasing speed",
@@ -306,17 +306,17 @@
       "answer":"optionA"
    },
    {
-      "id":37,
-      "questionnaire":"Which one is the portion of an instruction cycle where the instruction is sent from memory to register?",
+      "id":35,
+      "questionnaire":"Which one is the portion of an instruction cycle where the instruction is sent from memory to the instruction register?",
       "optionA":"load",
-      "optionB":"Accumulate",
+      "optionB":"accumulate",
       "optionC":"execute",
       "optionD":"fetch",
       "answer":"optionD"
    },
    {
-      "id":38,
-      "questionnaire":"For REE board examination, the passing general average is 70 percent provided there is no ________ in any of the 3 subjects.",
+      "id":36,
+      "questionnaire":"For REE board examination, the passing general average is 70 percent provided there is no grade below ________ in any of the 3 subjects.",
       "optionA":"50 percent",
       "optionB":"60 percent",
       "optionC":"65 percent",
@@ -324,7 +324,7 @@
       "answer":"optionA"
    },
    {
-      "id":39,
+      "id":37,
       "questionnaire":"What is the weight percent of mathematics subjects?",
       "optionA":"40",
       "optionB":"30",
@@ -333,7 +333,7 @@
       "answer":"optionD"
    },
    {
-      "id":40,
+      "id":38,
       "questionnaire":"What is work-in-process classified as?",
       "optionA":"an asset",
       "optionB":"a liability",
@@ -342,8 +342,8 @@
       "answer":"optionA"
    },
    {
-      "id":41,
-      "questionnaire":"HTTP.// is an identifier that appears at the beginning of most Web page. What does HTTP stands for?",
+      "id":39,
+      "questionnaire":"HTTP:// is an identifier that appears at the beginning of most Web page. What does HTTP stands for?",
       "optionA":"Hypertext Time Protocol",
       "optionB":"Hypertime Text Protocol",
       "optionC":"Hypertext Transmission Process",
@@ -351,7 +351,7 @@
       "answer":"optionD"
    },
    {
-      "id":42,
+      "id":40,
       "questionnaire":"For a fluid, viscosity is defined as the constant of proportionality between shear stress and what other variable?",
       "optionA":"the spatial derivative of velocity",
       "optionB":"the time derivative of pressure",
@@ -360,7 +360,7 @@
       "answer":"optionA"
    },
    {
-      "id":43,
+      "id":41,
       "questionnaire":"The thermodynamic statement of the conservation of energy of the system is the",
       "optionA":"first law",
       "optionB":"second law",
@@ -369,7 +369,7 @@
       "answer":"optionA"
    },
    {
-      "id":44,
+      "id":42,
       "questionnaire":"In sizing of wire, this is:",
       "optionA":"manufacturing rule",
       "optionB":"construction rule",
@@ -378,7 +378,7 @@
       "answer":"optionC"
    },
    {
-      "id":45,
+      "id":43,
       "questionnaire":"Galvanized steel are products coated with ______.",
       "optionA":"Carbon",
       "optionB":"Sulfur",
@@ -387,7 +387,7 @@
       "answer":"optionC"
    },
    {
-      "id":46,
+      "id":44,
       "questionnaire":"Which of the following materials is not viscoelastic material?",
       "optionA":"Glass",
       "optionB":"Rubber",
@@ -396,7 +396,7 @@
       "answer":"optionC"
    },
    {
-      "id":47,
+      "id":45,
       "questionnaire":"Which is the study of heat and transformation of energy?",
       "optionA":"Thermodynamics",
       "optionB":"Thermophysics",
@@ -405,7 +405,7 @@
       "answer":"optionA"
    },
    {
-      "id":48,
+      "id":46,
       "questionnaire":"Which of the following may be the Poisson’s ratio of material?",
       "optionA":"0.52",
       "optionB":"0.56",
@@ -414,7 +414,7 @@
       "answer":"optionD"
    },
    {
-      "id":49,
+      "id":47,
       "questionnaire":"A property of a material which it can be rolled a wire?",
       "optionA":"Ductility",
       "optionB":"Malleability",
@@ -423,7 +423,7 @@
       "answer":"optionB"
    },
    {
-      "id":50,
+      "id":48,
       "questionnaire":"What is a measure of the average speed with which accounts receivable are collected?",
       "optionA":"Current Ratio",
       "optionB":"Quick Ratio",
@@ -432,8 +432,8 @@
       "answer":"optionD"
    },
    {
-      "id":51,
-      "questionnaire":"What do you call the ratio of income to owner’s equity?",
+      "id":49,
+      "questionnaire":"What do you call the ratio of the net income to owner’s equity?",
       "optionA":"return of investment",
       "optionB":"gross margin",
       "optionC":"rate of return",
@@ -441,7 +441,7 @@
       "answer":"optionA"
    },
    {
-      "id":52,
+      "id":50,
       "questionnaire":"What is the old Electrical Engineering Law?",
       "optionA":"RA 814",
       "optionB":"RA 184",
@@ -450,7 +450,7 @@
       "answer":"optionB"
    },
    {
-      "id":53,
+      "id":51,
       "questionnaire":"What is another term for “acid-test ratio”?",
       "optionA":"Current Ratio",
       "optionB":"Quick Ratio",
@@ -459,8 +459,8 @@
       "answer":"optionB"
    },
    {
-      "id":54,
-      "questionnaire":"A line ground system, the white conductor that carries current in normal operation is?",
+      "id":52,
+      "questionnaire":"A line to ground system, the white conductor that carries current in normal operation is?",
       "optionA":"neutral",
       "optionB":"ground",
       "optionC":"grounding conductor",
@@ -468,7 +468,7 @@
       "answer":"optionA"
    },
    {
-      "id":55,
+      "id":53,
       "questionnaire":"A 4-wire system has a high-leg voltage that is indicated by a wire of color ______.",
       "optionA":"black",
       "optionB":"orange",
@@ -477,7 +477,7 @@
       "answer":"optionB"
    },
    {
-      "id":56,
+      "id":54,
       "questionnaire":"What are considered as the “building blocks” for engineering materials?",
       "optionA":"Atoms",
       "optionB":"Elements",
@@ -486,7 +486,7 @@
       "answer":"optionA"
    },
    {
-      "id":57,
+      "id":55,
       "questionnaire":"Which of the following is not a structural class of steels?",
       "optionA":"tool and die",
       "optionB":"high strength, low strength carbon",
@@ -495,7 +495,7 @@
       "answer":"optionA"
    },
    {
-      "id":58,
+      "id":56,
       "questionnaire":"Defects seen by optical or electron microscope",
       "optionA":"alteration",
       "optionB":"aberration",
@@ -504,8 +504,8 @@
       "answer":"optionB"
    },
    {
-      "id":59,
-      "questionnaire":"Which is not a programming language in web development?",
+      "id":57,
+      "questionnaire":"Which is not a programming language used in web development?",
       "optionA":"XMLB. Elements",
       "optionB":"FORTRAN",
       "optionC":"HTML",
@@ -513,7 +513,7 @@
       "answer":"optionB"
    },
    {
-      "id":60,
+      "id":58,
       "questionnaire":"Which is not used in programming application?",
       "optionA":"C",
       "optionB":"Java",
@@ -522,7 +522,7 @@
       "answer":"optionC"
    },
    {
-      "id":61,
+      "id":59,
       "questionnaire":"What size in AWG should the wire be for 70 A overcurrent protection device?",
       "optionA":"8",
       "optionB":"6",
@@ -531,7 +531,7 @@
       "answer":"optionB"
    },
    {
-      "id":62,
+      "id":60,
       "questionnaire":"In the wiring of PEC 2009, what is the version of National Electrical Code that was patterned to?",
       "optionA":"2008",
       "optionB":"2005",
@@ -540,7 +540,7 @@
       "answer":"optionB"
    },
    {
-      "id":63,
+      "id":61,
       "questionnaire":"After installing a new modem and router to a computer, what is the order of tuning on?",
       "optionA":"Computer, Modem, Router",
       "optionB":"Router, Modem, Computer",
@@ -549,16 +549,16 @@
       "answer":"optionD"
    },
    {
-      "id":64,
+      "id":62,
       "questionnaire":"Which of the following is the process that cannot found in a carnot engine cycle?",
       "optionA":"Isobaric Expansion",
       "optionB":"Adiabatic compression",
       "optionC":"Adiabatic expansion",
       "optionD":"Isothermal expansion",
-      "answer":"optionB"
+      "answer":"optionA"
    },
    {
-      "id":65,
+      "id":63,
       "questionnaire":"What is the branch circuit rating for hermetic motor 80 A?",
       "optionA":"80",
       "optionB":"92",
@@ -567,7 +567,7 @@
       "answer":"optionC"
    },
    {
-      "id":66,
+      "id":64,
       "questionnaire":"The largest solid conductor for raceway is",
       "optionA":"8 mm²",
       "optionB":"5.5 mm²",
@@ -576,8 +576,8 @@
       "answer":"optionB"
    },
    {
-      "id":67,
-      "questionnaire":"To consider as continuous load",
+      "id":65,
+      "questionnaire":"To consider as continuous load:",
       "optionA":"3 hours and more",
       "optionB":"4 hours and more",
       "optionC":"5 hours or more",
@@ -585,7 +585,7 @@
       "answer":"optionA"
    },
    {
-      "id":68,
+      "id":66,
       "questionnaire":"NGCP warns _________ alert if tropical disturbance within 24 hours.",
       "optionA":"yellow",
       "optionB":"blue",
@@ -594,7 +594,7 @@
       "answer":"optionB"
    },
    {
-      "id":69,
+      "id":67,
       "questionnaire":"In computing, what is a tape drive?",
       "optionA":"a data storing device",
       "optionB":"an OCR device",
@@ -603,7 +603,7 @@
       "answer":"optionA"
    },
    {
-      "id":70,
+      "id":68,
       "questionnaire":"The continuous current must not exceed ______ of the rating of the conductor?",
       "optionA":"60 percent",
       "optionB":"70 percent",
@@ -612,7 +612,7 @@
       "answer":"optionC"
    },
    {
-      "id":71,
+      "id":69,
       "questionnaire":"_______ is an act of sending e-mails or creating web pages that are designed to collect an individual’s online bank, credit card or other login information?",
       "optionA":"Malware",
       "optionB":"Hacking",
@@ -621,8 +621,8 @@
       "answer":"optionD"
    },
    {
-      "id":72,
-      "questionnaire":"The original amount of money invested, borrowed, or deposit",
+      "id":70,
+      "questionnaire":"The original amount of money invested, borrowed, or deposited.",
       "optionA":"Interest",
       "optionB":"Principal",
       "optionC":"Funds",

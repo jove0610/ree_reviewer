@@ -5,8 +5,11 @@ import Questionnaire from './Questionnaire';
 import esas20 from '../questionnaires/esas_2020.json';
 import esas19 from '../questionnaires/esas_2019.json';
 import esas18 from '../questionnaires/esas_2018.json';
+import esas17 from '../questionnaires/esas_2017.json';
+
 import ee19 from '../questionnaires/ee_2019.json';
 import ee18 from '../questionnaires/ee_2018.json';
+import ee17 from '../questionnaires/ee_2017.json';
 
 const App = () => {
   const examESAS = [
@@ -28,6 +31,12 @@ const App = () => {
       btnLabel: '2018',
       textLabel: 'ESAS 2018',
     },
+    {
+      json: esas17,
+      examSet: 3,
+      btnLabel: '2017',
+      textLabel: 'ESAS 2017',
+    },
   ];
 
   const examEE = [
@@ -42,6 +51,12 @@ const App = () => {
       examSet: 1,
       btnLabel: '2018',
       textLabel: 'EE 2018',
+    },
+    {
+      json: ee17,
+      examSet: 2,
+      btnLabel: '2017',
+      textLabel: 'EE 2017',
     },
   ];
 
