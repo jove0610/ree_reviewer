@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Navigation from './Navigation';
+import NavSubject from './NavSubject';
+import NavYear from './NavYear';
 import Questionnaire from './Questionnaire';
 
 import esas20 from '../questionnaires/esas_2020.json';
@@ -10,6 +11,8 @@ import esas17 from '../questionnaires/esas_2017.json';
 import ee19 from '../questionnaires/ee_2019.json';
 import ee18 from '../questionnaires/ee_2018.json';
 import ee17 from '../questionnaires/ee_2017.json';
+
+import styles from '../css/app.module.css';
 
 const App = () => {
   const examESAS = [
@@ -61,16 +64,18 @@ const App = () => {
   ];
 
   const [examSubject, setExamSubject] = useState([]);
-  const [examSet, setExamSet] = useState({});
-  const [currentItem, setCurrentItem] = useState(0);
+  const [examYear, setExamYear] = useState({});
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [activeTabYear, setActiveTabYear] = useState(0);
 
   useEffect(() => {
     if (examSubject.length === 0) return;
-    setExamSet(examSubject[0]);
+    setExamYear(examSubject[0]);
   }, [examSubject]);
 
   const changeSubjectCallback = (subject) => {
-    setCurrentItem(0);
+    setCurrentQuestion(0);
+    setActiveTabYear(0);
     if (subject === 'EE') {
       setExamSubject(examEE);
     }
@@ -80,30 +85,40 @@ const App = () => {
     }
   };
 
-  const changeSetCallback = (set) => {
-    setCurrentItem(0);
-    setExamSet(set);
+  const changeYearCallback = (year) => {
+    setCurrentQuestion(0);
+    setExamYear(year);
   };
 
-  const changeItemCallback = (item) => {
-    setCurrentItem(item);
+  const changeQuestionCallback = (item) => {
+    setCurrentQuestion(item);
+  };
+
+  const changeActiveYearTabCallback = (tabIndex) => {
+    setActiveTabYear(tabIndex);
   };
 
   return (
-    <div className='app'>
-      <header className='app__header'>
-        <h1 className='app__header__title'>REE Reviewer</h1>
+    <div className={styles.app}>
+      <header>
+        <h1 className={styles.title}>REE Reviewer</h1>
       </header>
-      <Navigation
-        examSubject={examSubject}
-        changeSubjectCallback={changeSubjectCallback}
-        changeSetCallback={changeSetCallback}
-      />
-      <Questionnaire
-        examSet={examSet}
-        currentItem={currentItem}
-        changeItemCallback={changeItemCallback}
-      />
+
+      <NavSubject changeSubjectCallback={changeSubjectCallback} />
+
+      <section className={styles.main}>
+        <NavYear
+          examSubject={examSubject}
+          changeYearCallback={changeYearCallback}
+          activeTab={activeTabYear}
+          changeActiveYearTabCallback={changeActiveYearTabCallback}
+        />
+        <Questionnaire
+          examYear={examYear}
+          currentQuestion={currentQuestion}
+          changeQuestionCallback={changeQuestionCallback}
+        />
+      </section>
     </div>
   );
 };

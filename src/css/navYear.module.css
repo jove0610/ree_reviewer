@@ -1,0 +1,19 @@
+.navYearContainer {
+  display: flex;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5em 0;
+  margin-bottom: 2em;
+  font-size: 1rem;
+}
+
+.buttonActive {
+  background: #ebd260;
+  border: none;
+  color: #fff;
+  color: black;
+}

@@ -1,108 +1,120 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import styles from '../css/questionnaire.module.css';
 
-const Questionnaire = ({ examSet, currentItem, changeItemCallback }) => {
-  if (Object.keys(examSet).length === 0) {
+const Questionnaire = ({
+  examYear,
+  currentQuestion,
+  changeQuestionCallback,
+}) => {
+  if (Object.keys(examYear).length === 0) {
     return null;
   }
-  // answerColor is assigned as the value of backgroundColor on inline style of the correct li element
-  const [answerColor, setAnswerColor] = useState('');
-  const examJSON = examSet.json;
-  const { answer } = examJSON[currentItem];
+  // highlightColor is assigned as the value of backgroundColor on inline style of the correct li element
+  const [highlightColor, setHighlighColor] = useState('');
+  const [toggleAnswerBtn, setToggleAnsBtn] = useState(false);
+  const examJSON = examYear.json;
+  const { answer } = examJSON[currentQuestion];
   // color used for highlighting answer
-  const color = '#1b6100';
+  const color = '#14F073';
+
+  const getAnswerBtnClass = () => {
+    if (toggleAnswerBtn) {
+      return `${styles.button} ${styles.buttonActive}`;
+    }
+    return `${styles.button}`;
+  };
 
   const onClickAns = () => {
-    if (answerColor) {
-      setAnswerColor('');
-      return;
+    if (highlightColor) {
+      setHighlighColor('');
     }
-    setAnswerColor(color);
+    if (!highlightColor) {
+      setHighlighColor(color);
+    }
+
+    if (toggleAnswerBtn) {
+      setToggleAnsBtn(false);
+    }
+
+    if (!toggleAnswerBtn) {
+      setToggleAnsBtn(true);
+    }
   };
 
   const onClickPrev = () => {
-    if (currentItem === 0) {
-      changeItemCallback(examJSON.length - 1);
+    if (currentQuestion === 0) {
+      changeQuestionCallback(examJSON.length - 1);
       return;
     }
-    changeItemCallback(currentItem - 1);
+    changeQuestionCallback(currentQuestion - 1);
   };
 
   const onClickNext = () => {
-    if (currentItem === examJSON.length - 1) {
-      changeItemCallback(0);
+    if (currentQuestion === examJSON.length - 1) {
+      changeQuestionCallback(0);
       return;
     }
-    changeItemCallback(currentItem + 1);
+    changeQuestionCallback(currentQuestion + 1);
   };
 
   // returns list element(choices) that has inline style of bgColor on the correct answer
   const inspectedListElement = (optionX) => {
     if (answer === optionX) {
       return (
-        <li className='choices' style={{ backgroundColor: answerColor }}>
-          {examJSON[currentItem][optionX]}
+        <li className='choices' style={{ backgroundColor: highlightColor }}>
+          {examJSON[currentQuestion][optionX]}
         </li>
       );
     }
-    return <li className='choices'>{examJSON[currentItem][optionX]}</li>;
+    return <li className='choices'>{examJSON[currentQuestion][optionX]}</li>;
   };
 
   return (
-    <section className='app__main'>
-      <nav className='app__main__navItems'>
-        <button
-          className='app__main__navItems__btn'
-          type='button'
-          onClick={onClickPrev}
-        >
+    <div>
+      <nav className={styles.buttonContainer}>
+        <button className={styles.button} type='button' onClick={onClickPrev}>
           Prev
         </button>
         <button
-          className='app__main__navItems__btn'
+          className={getAnswerBtnClass()}
           type='button'
           onClick={onClickAns}
         >
           Answer
         </button>
-        <button
-          className='app__main__navItems__btn'
-          type='button'
-          onClick={onClickNext}
-        >
+        <button className={styles.button} type='button' onClick={onClickNext}>
           Next
         </button>
       </nav>
-      <main className='app__main__items'>
-        <p className='app__main__items__subHeading'>
-          {`${currentItem + 1} / ${examJSON.length}`}
+      <main>
+        <p className={styles.subHeading}>
+          {`${currentQuestion + 1} / ${examJSON.length}`}
           &nbsp; &nbsp;
-          {examSet.textLabel}
+          {examYear.textLabel}
         </p>
-        <div className='app__main__items__questionnaire'>
-          <p
-            className='app__main__items__questionnaire__question'
-            dangerouslySetInnerHTML={{
-              __html: examJSON[currentItem].questionnaire,
-            }}
-          />
+        <p
+          className={styles.questionnaire}
+          dangerouslySetInnerHTML={{
+            __html: examJSON[currentQuestion].questionnaire,
+          }}
+        />
 
-          <ol className='app__main__items__questionnaire__choices'>
-            {inspectedListElement('optionA')}
-            {inspectedListElement('optionB')}
-            {inspectedListElement('optionC')}
-            {inspectedListElement('optionD')}
-          </ol>
-        </div>
+        <ol className={styles.choices}>
+          {inspectedListElement('optionA')}
+          {inspectedListElement('optionB')}
+          {inspectedListElement('optionC')}
+          {inspectedListElement('optionD')}
+        </ol>
       </main>
-    </section>
+    </div>
   );
 };
 
 Questionnaire.propTypes = {
-  examSet: PropTypes.objectOf(PropTypes.any).isRequired,
-  currentItem: PropTypes.number.isRequired,
-  changeItemCallback: PropTypes.func.isRequired,
+  examYear: PropTypes.objectOf(PropTypes.any).isRequired,
+  currentQuestion: PropTypes.number.isRequired,
+  changeQuestionCallback: PropTypes.func.isRequired,
 };
 
 export default Questionnaire;
